@@ -3,13 +3,13 @@
 <br />
 <p align="center">
   <a href="">
-    <img src="https://ufrr.br/images/ufrr_brasao.png" alt="" width="80" height="80">
+    <img src="https://user-images.githubusercontent.com/49700354/114078715-a61b2f00-987f-11eb-8eef-6fd7cfc17d33.png" alt="" width="80" height="80">
   </a>
 
   <h3 align="center">Arquitetura e Organização de Computadores: Projeto Final</h3>
 
   <p align="center">
-    Este é repositório contempla um projeto software e um relatório em formato de artigo de 6 páginas cujo objetivo é a aplicação de técnicas de projetos e arquitetura de computadores
+    Este repositório contempla um projeto software e um relatório em formato de artigo de 6 páginas cujo objetivo é a aplicação de técnicas de projetos e arquitetura de computadores
     <br />
     <a href=""><strong>Explore the docs »</strong></a>
     <br />
