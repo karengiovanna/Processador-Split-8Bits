@@ -31,7 +31,6 @@ Conteúdo | Data
 [Atividade sobre Aritmética Computacional]() | 11/03/2021
 [Atividade sobre Circuitos Digitais]() | 18/03/2021 
 [Atividade sobre Programação em VHDL]() | 25/03/2021
-
 [Atividade Processador MIPS: Uniciclo]() | 01/04/2021
 [Atividade sobre Programação em VHDL]() | 25/03/2021
 [Atividade sobre Programação em VHDL]() | 25/03/2021
