@@ -6,19 +6,19 @@ Esse documento consiste em uma lista de anotações de aula sobre a disciplina d
 
 Conteúdo | Data
 :-- | :--:
-[Introdução sobre Arquitetura e Evolução dos Computadores]() | 09/02/2021
-[Desempenho de Computadores e Conjunto de Instruções]() | 18/02/2021
-[Programação Assembly MIPS: Modos de Endereçamento e Formatos]() | 23/02/2021
-[Programação Assembly MIPS: Conjunto de Instruções]() | 02/03/2021
-[Aritmética Computacional]() | 09/03/2021
-[Programação em VHDL - Circuitos Digitais]() | 16/03/2021
-[Programação em VHDL – Parte 2]() | 23/03/2021
-[Barramentos do Sistema e Operação da Unidade de Controle: Uniciclo]() | 30/03/2021 
-[Operação da Unidade de Controle: Multiciclo]() | 06/04/2021
-[Revisão geral ]() | 08/04/2021
-[Avaliação OnLine]() | 13/04/2021
-[Técnica Pipelining]() | 15/04/2021
-[Pipelining Avançado - Unidade de Controle Microprogramada]() | 20/04/2021
+[Introdução sobre Arquitetura e Evolução dos Computadores] | 09/02/2021
+[Desempenho de Computadores e Conjunto de Instruções] | 18/02/2021
+[Programação Assembly MIPS: Modos de Endereçamento e Formatos] | 23/02/2021
+[Programação Assembly MIPS: Conjunto de Instruções](https://github.com/karengiovanna/AOC_KarenGiovanna_JoaoPaulo_UFRR2020/blob/main/disciplina%20AOC/notas/aula_04.pdf) | 02/03/2021
+[Aritmética Computacional] | 09/03/2021
+[Programação em VHDL - Circuitos Digitais] | 16/03/2021
+[Programação em VHDL – Parte 2] | 23/03/2021
+[Barramentos do Sistema e Operação da Unidade de Controle: Uniciclo] | 30/03/2021 
+[Operação da Unidade de Controle: Multiciclo] | 06/04/2021
+[Revisão geral ] | 08/04/2021
+[Avaliação OnLine] | 13/04/2021
+[Técnica Pipelining] | 15/04/2021
+[Pipelining Avançado - Unidade de Controle Microprogramada] | 20/04/2021
 
 ## Atividades
 
