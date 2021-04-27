@@ -19,6 +19,12 @@ Conteúdo | Data
 [Avaliação OnLine] | 13/04/2021
 [Técnica Pipelining] | 15/04/2021
 [Pipelining Avançado - Unidade de Controle Microprogramada] | 20/04/2021
+Análise do Projeto Final | 29/04/2021
+Hierarquia de Memória e Processamento Paralelo | 04/05/2021
+Análise do Projeto Final | 06/05/2021
+Testes práticos no projeto final | 11/05/2021
+Apresentação do Projeto Final | 13/05/2021
+
 
 ## Atividades
 
@@ -34,6 +40,9 @@ Conteúdo | Data
 [Atividade Processador MIPS: Uniciclo] | 01/04/2021
 [Atividade sobre Programação em VHDL] | 25/03/2021
 [Atividade sobre Programação em VHDL] | 25/03/2021
+Atividade Processador MIPS: Uniciclo | 01/04/2021
+[Atividade sobre Técnica Pipelining](https://github.com/karengiovanna/AOC_KarenGiovanna_JoaoPaulo_UFRR2020/blob/main/disciplina%20AOC/atividades/atividade%2022_04.pdf) | 22/04/2021
+
 
 ## Applications
 
