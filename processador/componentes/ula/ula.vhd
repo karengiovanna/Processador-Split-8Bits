@@ -11,7 +11,7 @@ entity ula is
         entrada_ula_op            : in std_logic_vector(7 downto 4);
 
         resultado_ula             : out std_logic_vector(7 downto 0);
-        zero                      : out std_logic;
+        zero                      : out std_logic
 
     );
 end ula;
