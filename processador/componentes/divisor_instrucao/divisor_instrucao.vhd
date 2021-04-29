@@ -22,7 +22,7 @@ architecture comportamento_divisor of divisor_instrucao is
         saida_reg1      <= entrada_divisor(3 downto 2);
         saida_reg2      <= entrada_divisor(1 downto 0);
 
-        saida_extensor2 <= entrada_divisor(1 downto 0)
+        saida_extensor2 <= entrada_divisor(1 downto 0);
 end comportamento_divisor;
         
     
