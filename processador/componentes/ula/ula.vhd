@@ -21,7 +21,7 @@ architecture comportamento_ula of ula is
     signal entrada_temp_if : in std_logic; -- Variável temporária para o if
 
     begin
-        process(clock_ula)
+        process(clock_ula = '1')
             case entrada_ula_op is
                 when "0000" => -- add
                     resultado_ula <= entrada_dado_lido1 + entrada_dado_lido2;

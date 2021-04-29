@@ -20,7 +20,7 @@ end unidade_controle;
 
 architecture comportamento_uc of unidade_controle is
     begin
-        process (clock_uc)
+        process (clock_uc = '1')
             case entrada_uc is
                 when "0000" => -- add
                     jump <= '0';
