@@ -39,17 +39,25 @@ architecture comportamento_ula of ula is
                     resultado_ula <= entrada_dado_lido1;
 
                 when "0110" => -- breach if equal
-                
-                -- if opcode 1001
-                when "1001" => -- if beq e bne
+                    if entrada_temp_if = '1' then
+                        zero <= '1';
+                    else 
+                        zero <= '0';
+                    end if;
+
+                when "0111" => -- breach if not equal
+                    if entrada_temp_if = '0' then
+                        zero <= '1';
+                    else 
+                        zero <= '0';
+                    end if;
+
+                when "1001" => -- if beq e bne // acrescentar na tabela de opcode
                     if entrada_dado_lido1 = entrada_dado_lido2 then
                         entrada_temp_if <= '1';
                     else
                         entrada_temp_if <= '0';
                     end if;
-                
-
-
-
+            end case;
         end process;
     end comportamento_ula;
