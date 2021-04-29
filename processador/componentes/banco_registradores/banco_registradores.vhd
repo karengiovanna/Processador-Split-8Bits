@@ -19,10 +19,10 @@ architecture comportamento_banco_regs of banco_regs is
     begin
         process (entrada_reg1)
             if (reg_write = '1') then -- se reg_write == 1 escreve o dado no banco de registradores
-                registradores(conv_integer(unsigned(entrada_reg1))) <= entrada_escrita_dados;  -- entrar no indice do vetor para salvar o dado 
+                registradores(to_integer(unsigned(entrada_reg1))) <= entrada_escrita_dados;  -- entrar no indice do vetor para salvar o dado 
             end if;
-            saida_dado_lido1 <= registradores(conv_integer(unsigned(entrada_reg1))); 
-            saida_dado_lido2 <= registradores(conv_integer(unsigned(entrada_reg2))) 
+            saida_dado_lido1 <= registradores(to_integer(unsigned(entrada_reg1))); 
+            saida_dado_lido2 <= registradores(to_integer(unsigned(entrada_reg2))) 
         end process;
 
 end comportamento_banco_regs;
