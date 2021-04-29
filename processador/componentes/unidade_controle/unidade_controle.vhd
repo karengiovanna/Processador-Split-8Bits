@@ -14,7 +14,7 @@ entity unidade_controle is
         ula_op    : out std_logic_vector(7 downto 4);
         M_write : out std_logic;
         ula_src : out std_logic;
-        reg_write : out std_logic;
+        reg_write : out std_logic
     );
 end unidade_controle;
 
