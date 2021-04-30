@@ -13,9 +13,10 @@ end pc;
 
 architecture comportamento_pc of pc is
     begin 
-        process (clock_pc) -- sempre será executado
-            if(clock_pc == 1) then -- se estiver ligado a instrucao de entrada sairá
-                saida_pc <= entrada_pc;
+        process (clock_pc) is
+		  begin -- sempre será executado
+            if clock_pc = '1' then -- se estiver ligado a instrucao de entrada sairá
+					saida_pc <= entrada_pc;
             end if;
         end process;
 end comportamento_pc;
