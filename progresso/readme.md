@@ -5,4 +5,5 @@ Data             |  Progresso | Dúvidas             | Imagem |  Link
 21 de abril de 2021 | Finalizamos o datapath | . | <img src="datapath.png"> | Utilizamos a plataforma [Draw.io](https://app.diagrams.net/)
 23 de abril de 2021 | Criamos os componentes PC, ADD e memória de registradores | Como encontrar as intruções | . | Utilizamos a IDE VS Code
 26 de abril de 2021 | Começamos o componente ULA | Como implementar o BEQ e BNE? | .
+28 de abril de 2021 | Criamos a waveform do componente pc | . |.
 29 de abril | Criamos o componente extensor de sinal, memória de dados e finalizamos a ula | É preciso corrigir o extensor de sinal superior do datapath e colocar opcode do if na lsta de opcode | .
