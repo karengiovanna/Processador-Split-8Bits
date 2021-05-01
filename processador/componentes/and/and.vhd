@@ -10,7 +10,7 @@ entity and_componente is
     );
 end and_componente;
 
-architecture and_comportamento of and_componente
+architecture and_comportamento of and_componente is
     begin
         saida_and <= entrada_and_1 and entrada_and_2;
-    end and_componente;
+    end and_comportamento;
