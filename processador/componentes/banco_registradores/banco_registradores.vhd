@@ -5,7 +5,7 @@ USE ieee.std_logic_arith.ALL;
 
 entity banco_registradores is
     port(
-        entrada_reg1            : in std_logic_vector(3 downto 2);
+        entrada_reg1            : in std_logic_vector(1 downto 0);
         entrada_reg2            : in std_logic_vector(1 downto 0);
         entrada_escrita_dados   : in std_logic_vector(7 downto 0);
 
