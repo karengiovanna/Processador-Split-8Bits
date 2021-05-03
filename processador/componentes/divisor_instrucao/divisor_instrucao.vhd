@@ -6,8 +6,8 @@ entity divisor_instrucao is
         saida_extensor1 :   out std_logic_vector(4 downto 0);
         
         entrada_divisor :   in std_logic_vector (7 downto 0);
-        saida_uc        :   out std_logic_vector(7 downto 4);
-        saida_reg1      :   out std_logic_vector(3 downto 2);
+        saida_uc        :   out std_logic_vector(3 downto 0);
+        saida_reg1      :   out std_logic_vector(1 downto 0);
         saida_reg2      :   out std_logic_vector(1 downto 0);   
         
         saida_extensor2 :   out std_logic_vector(1 downto 0)  
