@@ -7,3 +7,4 @@ Data             |  Progresso | Dúvidas             | Imagem |  Link
 26 de abril de 2021 | Começamos o componente ULA | Como implementar o BEQ e BNE? | .
 28 de abril de 2021 | Criamos a waveform do componente pc | . |.
 29 de abril | Criamos o componente extensor de sinal, memória de dados e finalizamos a ula | É preciso corrigir o extensor de sinal superior do datapath e colocar opcode do if na lsta de opcode | .
+03 de maio de 2021 | Fizemos waveforms, corrigimos o Datapath | Identificamos um erro na sintaxe da ULA | . 
