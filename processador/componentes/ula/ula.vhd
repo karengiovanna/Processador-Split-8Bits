@@ -8,20 +8,24 @@ entity ula is
 
         entrada_dado_lido1        : in std_logic_vector(7 downto 0);
         entrada_dado_lido2        : in std_logic_vector(7 downto 0);
-        entrada_ula_op            : in std_logic_vector(7 downto 4);
+        entrada_ula_op            : in std_logic_vector(3 downto 0);
 
         resultado_ula             : out std_logic_vector(7 downto 0);
         zero                      : out std_logic
+
+        --overflow                  : out std_logic
 
     );
 end ula;
 
 architecture comportamento_ula of ula is
 
-    signal entrada_temp_if : in std_logic; -- Variável temporária para o if
+    signal entrada_temp_if : std_logic; -- Variável temporária para o if
+    signal result_mult : std_logic_vector(15 downto 0);
 
     begin
-        process(clock_ula = '1')
+        process(clock_ula)
+				begin
             case entrada_ula_op is
                 when "0000" => -- add
                     resultado_ula <= entrada_dado_lido1 + entrada_dado_lido2;
@@ -30,7 +34,13 @@ architecture comportamento_ula of ula is
                     resultado_ula <= entrada_dado_lido1 - entrada_dado_lido2;
 
                 when "0010" => -- mult
-                    resultado_ula <= entrada_dado_lido1 * entrada_dado_lido2;
+                    result_mult <= entrada_dado_lido1 * entrada_dado_lido2;
+                    if result_mult(8) = '1' or result_mult(9) = '1' or result_mult(10) = '1' or result_mult(11) = '1' or result_mult(12) = '1' or result_mult(13) = '1' or result_mult(14) = '1' or result_mult(15) = '1' then
+                        --overflow = '1';
+                    else
+                        resultado_ula <= result_mult(7 downto 0);
+                        --overflow = '0';
+                    end if;
 
                 when "0011" => -- Load Word
                     resultado_ula <= entrada_dado_lido1;
@@ -58,6 +68,8 @@ architecture comportamento_ula of ula is
                     else
                         entrada_temp_if <= '0';
                     end if;
+					 when others =>
+                        resultado_ula <= "00000000";
             end case;
         end process;
     end comportamento_ula;
