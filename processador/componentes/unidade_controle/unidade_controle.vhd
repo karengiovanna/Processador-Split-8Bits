@@ -121,12 +121,10 @@ architecture comportamento_uc of unidade_controle is
                     ula_op <= "1001";
                     M_write <= '0';
                     ula_src <= '0';
-                    reg_write <= '0';
-						 
-					 
+                    reg_write <= '0';		 
 					
-					 when others =>
-						  jump <= '0';
+				when others => -- Default
+			    	jump <= '0';
                     branch <= '0';
                     M_read <= '0';
                     M_to_reg <= '0';
