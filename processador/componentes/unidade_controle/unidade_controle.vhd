@@ -5,13 +5,13 @@ entity unidade_controle is
     port(
 
         clock_uc        : in std_logic;
-        entrada_uc      : in std_logic_vector(7 downto 4);
+        entrada_uc      : in std_logic_vector(3 downto 0);
         jump   : out std_logic;
         branch : out std_logic;
         M_read : out std_logic;
         M_to_reg : out std_logic;
 
-        ula_op    : out std_logic_vector(7 downto 4);
+        ula_op    : out std_logic_vector(3 downto 0);
         M_write : out std_logic;
         ula_src : out std_logic;
         reg_write : out std_logic
@@ -20,7 +20,8 @@ end unidade_controle;
 
 architecture comportamento_uc of unidade_controle is
     begin
-        process (clock_uc = '1')
+        process (clock_uc)
+			begin
             case entrada_uc is
                 when "0000" => -- add
                     jump <= '0';
@@ -108,6 +109,28 @@ architecture comportamento_uc of unidade_controle is
                     M_read <= '0';
                     M_to_reg <= '0';
                     ula_op <= "1000";
+                    M_write <= '0';
+                    ula_src <= '0';
+                    reg_write <= '0';
+					
+                when "1001" => -- if
+                    jump <= '0';
+                    branch <= '0';
+                    M_read <= '0';
+                    M_to_reg <= '0';
+                    ula_op <= "1001";
+                    M_write <= '0';
+                    ula_src <= '0';
+                    reg_write <= '0';
+						 
+					 
+					
+					 when others =>
+						  jump <= '0';
+                    branch <= '0';
+                    M_read <= '0';
+                    M_to_reg <= '0';
+                    ula_op <= "1111";
                     M_write <= '0';
                     ula_src <= '0';
                     reg_write <= '0';
