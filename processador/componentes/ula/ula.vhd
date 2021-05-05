@@ -29,7 +29,7 @@ architecture comportamento_ula of ula is
             case entrada_ula_op is
                 when "0000" => -- add
                     resultado_ula <= entrada_dado_lido1 + entrada_dado_lido2;
-                
+					                
                 when "0001" => -- sub
                     resultado_ula <= entrada_dado_lido1 - entrada_dado_lido2;
 
@@ -47,7 +47,14 @@ architecture comportamento_ula of ula is
                 
                 when "0100" => -- Store Word
                     resultado_ula <= entrada_dado_lido1;
-
+                        
+		        when "1001" => -- if beq e bne // acrescentar na tabela de opcode
+                    if entrada_dado_lido1 = entrada_dado_lido2 then
+                        entrada_temp_if <= '1';
+                    else
+                        entrada_temp_if <= '0';
+                    end if;
+						  
                 when "0110" => -- breach if equal
                     if entrada_temp_if = '1' then
                         zero <= '1';
@@ -61,15 +68,9 @@ architecture comportamento_ula of ula is
                     else 
                         zero <= '0';
                     end if;
-
-                when "1001" => -- if beq e bne // acrescentar na tabela de opcode
-                    if entrada_dado_lido1 = entrada_dado_lido2 then
-                        entrada_temp_if <= '1';
-                    else
-                        entrada_temp_if <= '0';
-                    end if;
-					 when others =>
-                        resultado_ula <= "00000000";
+                
+				when others =>
+                    resultado_ula <= "00000000";
             end case;
         end process;
     end comportamento_ula;
