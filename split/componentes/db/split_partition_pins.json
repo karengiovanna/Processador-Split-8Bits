@@ -1,0 +1,205 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "saida_componente_pc[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_pc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_pc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_pc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_pc[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_pc[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_pc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_pc[7]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_memoria_instrucao[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_memoria_instrucao[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_memoria_instrucao[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_memoria_instrucao[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_memoria_instrucao[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_memoria_instrucao[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_memoria_instrucao[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_memoria_instrucao[7]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_1_componente_banco_registradores[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_1_componente_banco_registradores[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_1_componente_banco_registradores[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_1_componente_banco_registradores[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_1_componente_banco_registradores[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_1_componente_banco_registradores[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_1_componente_banco_registradores[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_1_componente_banco_registradores[7]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_2_componente_banco_registradores[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_2_componente_banco_registradores[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_2_componente_banco_registradores[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_2_componente_banco_registradores[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_2_componente_banco_registradores[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_2_componente_banco_registradores[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_2_componente_banco_registradores[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_2_componente_banco_registradores[7]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_ula[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_ula[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_ula[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_ula[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_ula[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_ula[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_ula[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_componente_ula[7]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_memoria_dados[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_memoria_dados[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_memoria_dados[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_memoria_dados[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_memoria_dados[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_memoria_dados[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_memoria_dados[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saida_memoria_dados[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
