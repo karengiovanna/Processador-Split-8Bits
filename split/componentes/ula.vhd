@@ -47,8 +47,11 @@ architecture comportamento_ula of ula is
                 
                 when "0100" => -- Store Word
                     resultado_ula <= entrada_dado_lido1;
+					--alteração ula  
+					 when "0101" =>
+						  resultado_ula <= entrada_dado_lido2;
                         
-		        when "1001" => -- if beq e bne // acrescentar na tabela de opcode
+		          when "1001" => -- if beq e bne // acrescentar na tabela de opcode
                     if entrada_dado_lido1 = entrada_dado_lido2 then
                         entrada_temp_if <= '1';
                     else

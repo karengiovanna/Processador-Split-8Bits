@@ -5,6 +5,8 @@ USE ieee.std_logic_arith.ALL;
 
 entity banco_registradores is
     port(
+	 -- alteração clock
+		  clock : IN std_logic;
         entrada_reg1            : in std_logic_vector(1 downto 0);
         entrada_reg2            : in std_logic_vector(1 downto 0);
         entrada_escrita_dados   : in std_logic_vector(7 downto 0);
@@ -22,11 +24,13 @@ architecture comportamento_banco_registradores of banco_registradores is
     signal registrador : banco_registrador;
 
     begin
-        process (entrada_reg1)
+        process (clock)
 			begin
+			if rising_edge(clock) then
             if (reg_write = '1') then -- se reg_write == 1 escreve o dado no banco de registradores
                 registrador(conv_integer(unsigned(entrada_reg1))) <= entrada_escrita_dados;  -- entrar no indice do vetor para salvar o dado 
             end if;
+			end if;
             saida_dado_lido1 <= registrador(conv_integer(unsigned(entrada_reg1))); 
             saida_dado_lido2 <= registrador(conv_integer(unsigned(entrada_reg2)));
         end process;

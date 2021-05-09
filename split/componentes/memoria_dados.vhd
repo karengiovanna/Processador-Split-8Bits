@@ -16,18 +16,19 @@ entity memoria_dados is
 end memoria_dados;
 
 architecture comportamento_mem_dados of memoria_dados is
-    type enderecos_mem_dados is array(0 to 7) of std_logic_vector(7 downto 0);
-    signal indice_mem_dados : enderecos_mem_dados := (OTHERS => "00000001");
+    type enderecos_mem_dados is array(0 to 3) of std_logic_vector(7 downto 0);
+    signal indice_mem_dados : enderecos_mem_dados := (OTHERS => "00000000");
     begin
         process(clock_mem_dados)
             begin
                 IF rising_edge(clock_mem_dados) THEN
-                    if (M_read = '1') then 
+						-- M_write M_read
+                    if (M_write = '1') then 
                         indice_mem_dados(to_integer(unsigned(entrada_endereco))) <= escrita_dados;
 
                     end if;
 
-                    if (M_write = '1') then 
+                    if (M_read = '1') then 
                         dado_lido <= indice_mem_dados(to_integer(unsigned(entrada_endereco)));
                     end if;
                 END IF;

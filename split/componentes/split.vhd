@@ -72,6 +72,7 @@ architecture comportamento_split of split is
 	
 	component banco_registradores is
 		 port(
+			  clock : IN std_logic;
 			  entrada_reg1            : in std_logic_vector(1 downto 0);
 			  entrada_reg2            : in std_logic_vector(1 downto 0);
 			  entrada_escrita_dados   : in std_logic_vector(7 downto 0);
@@ -235,7 +236,7 @@ begin
 	
 	port_map_uc : unidade_controle port map(clock, out_uc, flag_jump, flag_branch, flag_M_read, flag_M_to_reg, flag_ula_op, flag_M_write, flag_ula_src, flag_reg_write);
 	
-	port_map_banco_regs : banco_registradores port map(out_reg1, out_reg2, out_mux_M_to_reg, out_dado_lido1, out_dado_lido2, flag_reg_write);
+	port_map_banco_regs : banco_registradores port map(clock, out_reg1, out_reg2, out_mux_M_to_reg, out_dado_lido1, out_dado_lido2, flag_reg_write);
 	
 	port_map_extensor_sinal_4_8 : extensor_sinal_4_8 port map(out_extensor1, out_extensor_sinal_4_8);
 	
@@ -247,13 +248,15 @@ begin
 	
 	port_map_memoria_dados : memoria_dados port map(clock, flag_M_read, flag_M_write, out_extensor_sinal_2_8, out_ula, out_mem_dados);
 
-	port_map_multiplexador_M_to_reg : multiplexador_M_to_reg port map(flag_M_to_reg, out_mem_dados, out_mux_ula, out_mux_M_to_reg);
+	port_map_multiplexador_M_to_reg : multiplexador_M_to_reg port map(flag_M_to_reg, out_mem_dados, out_ula, out_mux_M_to_reg);
 	
 	port_map_and_componente : and_componente port map(flag_branch, out_zero, out_and);
 	
-	port_map_multiplexador_Branch_and : multiplexador_Branch_and port map(out_and, out_extensor_sinal_2_8, out_add, out_mux_Branch_and);
 	
-	port_map_multiplexador_jump : multiplexador_jump port map(flag_jump, out_extensor_sinal_2_8, out_mux_Branch_and, out_mux_jump);
+	port_map_multiplexador_Branch_and : multiplexador_Branch_and port map(out_and, out_extensor_sinal_4_8, out_add, out_mux_Branch_and);
+	
+	
+	port_map_multiplexador_jump : multiplexador_jump port map(flag_jump, out_extensor_sinal_4_8, out_mux_Branch_and, out_mux_jump);
 	
 	saida_componente_pc <= out_pc;
 	saida_componente_memoria_instrucao <= out_mem_instrucao;
