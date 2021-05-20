@@ -24,10 +24,19 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Sobre o projeto
-É um processador de 8 bits denominado Split baseado no processador MIPS(Microprocessor without interlocked pipeline stages). MIPS é uma arquitetura de microprocessadores RISC comum na década de 80 em plataformas Nintendo, NEC, Sony, SG, etc que foi desenvolvida pela MIPS Computer Systems, muito semelhante aos RISC modernos e simples :)
+É um processador de 8 bits denominado Split baseado no processador MIPS(Microprocessor without interlocked pipeline stages) capaz de realizar operações aritméticas básicas, operações de transferência de dados e operações de saltos. MIPS é uma arquitetura de microprocessadores RISC comum na década de 80 em plataformas Nintendo, NEC, Sony, SG, etc que foi desenvolvida pela MIPS Computer Systems, muito semelhante aos RISC modernos e simples :)
 
-## Para fazer esse processador..
-Foi preciso primeiramente aprender a linguagem Assembly MIPS e para isso é necessário entender a arquitetura do MIPS. A estudada foi de 32 registradores de uso geral de 32 bits cada, cuja nomenclatura vai de $s0 a $s32 para variáveis ou $t0 a $t21 para registradores temporários. Por que apenas 32? Porque mais registradores aumentam a complexidade do processador e afetam o desempenho.
+## Esquema para implementação
+<p align="center">
+  <a href="">
+    <img src="https://github.com/karengiovanna/AOC_KarenGiovanna_JoaoPaulo_UFRR2020/blob/main/DATAPATH_8_BITS.jpg?raw=true" alt="" width="90%" height="%">
+  </a>
+
+## Para construir esse processador..
+Foi preciso primeiramente aprender a linguagem Assembly MIPS e para isso foi necessário entender a arquitetura do MIPS. A estudada foi de 32 registradores de uso geral de 32 bits cada, cuja nomenclatura vai de $s0 a $s32 para variáveis ou $t0 a $t21 para registradores temporários. Por que apenas 32? Porque mais registradores aumentam a complexidade do processador e afetam o desempenho.
+  
+ Pelo fato do processaor de 8 bits possuir limitações quanto ao tamanho da palavra, O Split possui apenas quatro registradores possíveis de uso e são compostos por 
+  
 Há três principais classes de instruções e cada uma delas possui 32bits. Nelas temos segmentação das intruções: opcode(nos 6 primeiros bits), rs, rt, rd, shamt, funct(6 bits). [Simulador MIPS32](http://spimsimulator.sourceforge.net/)
 [MIS DataPath](http://mi.eng.cam.ac.uk/~ahg/MIPS-Datapath/)
 
