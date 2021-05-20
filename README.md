@@ -7,7 +7,7 @@
   </a>
 
   <h3 align="center">Arquitetura e Organização de Computadores: Projeto Final</h3>
-
+  
   <p align="center">
     Este repositório contempla um projeto software e um relatório em formato de artigo cujo objetivo é a aplicação de técnicas de projetos e arquitetura de computadores
     <br />
@@ -23,8 +23,12 @@
 </p>
 
 <!-- ABOUT THE PROJECT -->
-## Sobre o projeto
-É um processador de 8 bits denominado Split baseado no processador MIPS(Microprocessor without interlocked pipeline stages) capaz de realizar operações aritméticas básicas, operações de transferência de dados e operações de saltos. MIPS é uma arquitetura de microprocessadores RISC comum na década de 80 em plataformas Nintendo, NEC, Sony, SG, etc que foi desenvolvida pela MIPS Computer Systems, muito semelhante aos RISC modernos e simples :)
+## Sobre o projeto Processador Split
+É um processador de 8 bits denominado Split baseado no processador MIPS(Microprocessor without interlocked pipeline stages) capaz de realizar operações aritméticas básicas, operações de transferência de dados e operações de saltos.
+
+## Ferramentas e Linguagens
+Foi contruído na linguagem VHDL que é usada para facilitar o design de circuitos digitais e implementada no programa [Intel Quartus Prime Lite](https://fpgasoftware.intel.com/?edition=lite). A simulação (waveform) foi feita dentro do Quartus por meio do ambiente [ModelSIM](https://www.intel.com.br/content/www/br/pt/software/programmable/quartus-prime/model-sim.html) que é utilizado para simulação de linguagens de descrição de hardware.
+
 
 ## Esquema para implementação
 <p align="center">
@@ -32,18 +36,30 @@
     <img src="https://github.com/karengiovanna/AOC_KarenGiovanna_JoaoPaulo_UFRR2020/blob/main/DATAPATH_8_BITS.jpg?raw=true" alt="" width="90%" height="%">
   </a>
 
-## Para construir esse processador..
-Foi preciso primeiramente aprender a linguagem Assembly MIPS e para isso foi necessário entender a arquitetura do MIPS. A estudada foi de 32 registradores de uso geral de 32 bits cada, cuja nomenclatura vai de $s0 a $s32 para variáveis ou $t0 a $t21 para registradores temporários. Por que apenas 32? Porque mais registradores aumentam a complexidade do processador e afetam o desempenho.
-  
- Pelo fato do processaor de 8 bits possuir limitações quanto ao tamanho da palavra, O Split possui apenas quatro registradores possíveis de uso e são compostos por 
-  
-Há três principais classes de instruções e cada uma delas possui 32bits. Nelas temos segmentação das intruções: opcode(nos 6 primeiros bits), rs, rt, rd, shamt, funct(6 bits). [Simulador MIPS32](http://spimsimulator.sourceforge.net/)
-[MIS DataPath](http://mi.eng.cam.ac.uk/~ahg/MIPS-Datapath/)
+  ## Componentes / Unidades funcionais do processador:
+ * [Program Counter(PC)](https://github.com/karengiovanna/AOC_KarenGiovanna_JoaoPaulo_UFRR2020/blob/main/split/componentes/pc.vhd), 
+ * [Banco de Registradores](https://github.com/karengiovanna/AOC_KarenGiovanna_JoaoPaulo_UFRR2020/blob/main/split/componentes/banco_registradores.vhd), 
+ * [Memória de Instruções](https://github.com/karengiovanna/AOC_KarenGiovanna_JoaoPaulo_UFRR2020/blob/main/split/componentes/memoria_instrucao.vhd), 
+ * [Unidade Lógica Aritmética (ULA)](https://github.com/karengiovanna/AOC_KarenGiovanna_JoaoPaulo_UFRR2020/blob/main/split/componentes/ula.vhd), 
+ * [Unidade de Controle](https://github.com/karengiovanna/AOC_KarenGiovanna_JoaoPaulo_UFRR2020/blob/main/split/componentes/unidade_controle.vhd),
+ * [Memória de Dados](https://github.com/karengiovanna/AOC_KarenGiovanna_JoaoPaulo_UFRR2020/blob/main/split/componentes/memoria_dados.vhd)  
 
-### Objetivos de aprendizagem da disciplina
+
+  ## Registradores e Formato das instruções 
+ Pelo fato do processaor de 8 bits possuir limitações quanto ao tamanho da palavra, O Split possui apenas quatro registradores possíveis de uso e eles são compostos por 2 bits cada. 
+
+### Objetivos de aprendizagem da disciplina Arquitetura e Organização de Computadores
 Apresentar a natureza e as características dos sistemas de computação modernos, conhecendo os paradigmas organizacionais que determinam as capacidades e o desempenho dos sistemas computacionais, transmitindo o conhecimento necessário para a utilização, gerenciamento e projetos dos sistemas computacionais para revitalizar os processos de organização e as arquiteturas de computadores existentes.
 
-### Construido com
-* [Intel Quartus](https://getbootstrap.com)
+### Para executar o processador:
+* Abra o programa [Intel Quartus](https://fpgasoftware.intel.com/?edition=lite) e tenha instalado o simulador ModelSIM
+* Clone este repositório e copie a pasta split/componentes para um local de sua preferência
+* Abra o projeto da pasta split/componentes no Quartus
+* Faca a análise e síntese
+* Gere a waveform
+  
+## Conteúdos extras:
+[Simulador MIPS32](http://spimsimulator.sourceforge.net/)
+[MIPS DataPath](http://mi.eng.cam.ac.uk/~ahg/MIPS-Datapath/)
 
 
