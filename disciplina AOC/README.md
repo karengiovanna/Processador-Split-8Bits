@@ -34,13 +34,13 @@ Conteúdo | Data
 [Atividade sobre Desempenho de Computadores] | 16/02/2021
 [Atividade sobre Programação Assembly MIPS] | 25/02/2021
 [Atividade sobre Conjunto de Instruções] | 04/03/2021
-[Atividade sobre Aritmética Computacional] | 11/03/2021
+[Atividade sobre Aritmética Computacional](https://github.com/karengiovanna/Processador-Split-8Bits/blob/main/disciplina%20AOC/atividades/Atividade%20Aula%2011%2003.pdf) | 11/03/2021
 [Atividade sobre Circuitos Digitais](https://github.com/karengiovanna/100-dias-de-codigo/tree/main/Arquitetura_De_Computadores/atividade_18.03.2021) | 18/03/2021 
 [Atividade sobre Programação em VHDL](https://github.com/karengiovanna/100-dias-de-codigo/tree/main/Arquitetura_De_Computadores/atividade_25.03.2021) | 25/03/2021
 [Atividade Processador MIPS: Uniciclo] | 01/04/2021
-[Atividade sobre Programação em VHDL] | 25/03/2021
-[Atividade sobre Programação em VHDL] | 25/03/2021
-Atividade Processador MIPS: Uniciclo | 01/04/2021
+[Atividade sobre Programação em VHDL](https://github.com/karengiovanna/Processador-Split-8Bits/blob/main/disciplina%20AOC/atividades/Atividade%20Aula%202503.pdf) | 25/03/2021
+[Atividade sobre Programação em VHDL](https://github.com/karengiovanna/Processador-Split-8Bits/blob/main/disciplina%20AOC/atividades/Atividade%20Aula%202503.pdf) | 25/03/2021
+[Atividade Processador MIPS: Uniciclo](https://github.com/karengiovanna/Processador-Split-8Bits/blob/main/disciplina%20AOC/atividades/Atividade%20Aula%200104.pdf) | 01/04/2021
 [Atividade sobre Técnica Pipelining](https://github.com/karengiovanna/AOC_KarenGiovanna_JoaoPaulo_UFRR2020/blob/main/disciplina%20AOC/atividades/atividade%2022_04.pdf) | 22/04/2021
 
 
